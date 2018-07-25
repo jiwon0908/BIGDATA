@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block content %}
+    <table class="table table-bordered table-hover ">
+    <thread>
+        <th>이름</th>
+        <th>메일</th>
+    </thread>
+    <tbody>
+    {% for i in won %}
+    <tr>
+        <td>{{ i.username}}</td>
+        <td>{{ i.email }}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+    </table>
+
+{#    #}
+{#        {% for i in won %}#}
+{#            <tr>#}
+{#                <td>{{ i.email }}</td>#}
+{#                <td>{{ i.username }}</td>#}
+{#            </tr>#}
+{#        {% endfor %}#}
+{% endblock %}
